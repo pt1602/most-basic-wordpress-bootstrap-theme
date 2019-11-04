@@ -1,5 +1,5 @@
 </main>
-<footer>
+<footer class="mt-4">
     <nav class="navbar navbar-dark bg-dark">
         <div class="container">
             <?php

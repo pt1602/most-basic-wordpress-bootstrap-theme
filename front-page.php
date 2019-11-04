@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
     <?php if (has_post_thumbnail()): ?>
-        <section class="section-image" style="background-image: url('<?php the_post_thumbnail_url('largest'); ?>')"></section>
+        <section class="section-image" style="background-image: url('<?php the_post_thumbnail_url('front-image'); ?>')"></section>
     <?php endif; ?>
 
     <div class="container">

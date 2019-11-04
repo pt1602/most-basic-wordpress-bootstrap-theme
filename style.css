@@ -33,3 +33,12 @@ footer .menu-item:first-child {
 #menu-footer-menu li a {
     color: #fff;
 }
+
+#menu-footer-menu .menu-item {
+    margin-right: 10px !important;
+}
+
+/* Nav */
+#navbarNav {
+    flex-direction: row-reverse;
+}
