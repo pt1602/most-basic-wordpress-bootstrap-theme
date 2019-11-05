@@ -1,4 +1,8 @@
 # most-basic-wordpress-bootstrap-theme
-build my own Wordpress based on the tutorial from Mr Digital (https://www.youtube.com/watch?v=pFMgAWkrk8o)
+Going to build my own wordpress theme in this repo.
 
-its going to be optimized in the future, stay tuned! :)
+Its going to be optimized in the future, stay tuned! :)
+
+Sources:
+> https://www.youtube.com/watch?v=pFMgAWkrk8o
+> https://www.youtube.com/watch?v=74Sa9u4-PR8
