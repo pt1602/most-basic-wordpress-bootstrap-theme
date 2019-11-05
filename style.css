@@ -2,34 +2,15 @@
 Theme Name: PT1602 Blog
 Author: Philipp Tuchardt
 */
-
-.menu-item {
-    margin: 0 5px 0 5px;
+:root {
+    --pad-xxl: 100px 0;
 }
 
+/* Footer */
 footer .menu-item:first-child {
     margin: 0;
 }
 
-/* Archive */
-.card-img-top {
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* Single Post */
-.section-image {
-    height: 80vh;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* Footer */
 #menu-footer-menu li a {
     color: #fff;
 }
@@ -41,4 +22,8 @@ footer .menu-item:first-child {
 /* Nav */
 #navbarNav {
     flex-direction: row-reverse;
+}
+
+.menu-item {
+    margin: 0 5px 0 5px;
 }

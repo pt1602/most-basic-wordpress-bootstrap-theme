@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php 
+function load_singlepage_css()
+{
+    wp_register_style('singlepage_css', get_template_directory_uri() . '/src/css/single-page.css', array(), false, 'all');
+    wp_enqueue_style('singlepage_css');
+}
+add_action('wp_enqueue_scripts', 'load_singlepage_css');
+get_header(); ?>
 
     <?php if (has_post_thumbnail()): ?>
         <section class="section-image" style="background-image: url('<?php the_post_thumbnail_url('largest'); ?>')"></section>

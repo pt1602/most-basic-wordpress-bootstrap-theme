@@ -25,15 +25,16 @@ add_action('wp_enqueue_scripts', 'load_js');
 
 register_nav_menus(
   array(
-      'top-menu' => __('Top Menu', 'theme'),
-      'footer-menu' => __('Footer Menu', 'theme'),
+      'top-menu' => __('Top Menu', 'pt1602'),
+      'footer-menu' => __('Footer Menu', 'pt1602'),
   )
 );
 
 add_theme_support('menus');
 add_theme_support('post-thumbnails');
 
-add_image_size('small', 300, 300, true);
-add_image_size('large', 800, 800, true);
-add_image_size('largest', 1600, 1600, true);
-add_image_size('largest', 2000, 1000, true);
+// Customizer 
+require get_template_directory().'/src/php/customizer.php';
+
+// Image Sizes 
+require get_template_directory().'/src/php/image-sizes.php';

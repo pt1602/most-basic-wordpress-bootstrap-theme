@@ -1,0 +1,15 @@
+/* Front Page*/
+
+/* Sections */
+main section {
+    padding: var(--pad-xxl);
+}
+
+/* Masthead */
+#masthead {
+    text-align: center;
+    height: calc(100vh - 56px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

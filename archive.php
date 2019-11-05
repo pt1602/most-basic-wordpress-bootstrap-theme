@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php 
+function load_archive_css()
+{
+    wp_register_style('archive_css', get_template_directory_uri() . '/src/css/archive-page.css', array(), false, 'all');
+    wp_enqueue_style('archive_css');
+}
+add_action('wp_enqueue_scripts', 'load_archive_css');
+get_header(); ?>
 
     <div class="container mb-4">
         <h1 class="mt-4 mb-4"><?php single_cat_title(); ?></h1>
