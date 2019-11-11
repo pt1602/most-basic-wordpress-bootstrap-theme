@@ -17,37 +17,38 @@ get_header(); ?>
     </section>
 </header>
 <main>
-    <!-- TODO: Add later
+
     <section>
         <div class="container">
+            <h1 class="mb-4"><?php echo get_theme_mod('Cards-title', 'Cards Title') ?></h1>
             <div class="row">
                 <div class="col">
                     <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="<?php echo get_theme_mod('card-image-1', 'https://images.unsplash.com/photo-1502888395188-799b90b43871?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') ?>" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title"><?php echo get_theme_mod('card-title-1', 'Card Title 1') ?></h5>
+                            <p class="card-text"><?php echo get_theme_mod('card-text-1', 'Card Text 1') ?></p>
+                            <a href="<?php echo get_theme_mod('card-link-1', 'https://www.google.com/') ?>" class="btn btn-primary"><?php echo get_theme_mod('card-button-1', 'Card Button 1') ?></a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="<?php echo get_theme_mod('card-image-2', 'https://images.unsplash.com/photo-1502888395188-799b90b43871?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') ?>" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title"><?php echo get_theme_mod('card-title-2', 'Card Title 2') ?></h5>
+                            <p class="card-text"><?php echo get_theme_mod('card-text-2', 'Card Text 2') ?></p>
+                            <a href="<?php echo get_theme_mod('card-link-2', 'https://www.google.com/') ?>" class="btn btn-primary"><?php echo get_theme_mod('card-button-2', 'Card Button 2') ?></a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="<?php echo get_theme_mod('card-image-3', 'https://images.unsplash.com/photo-1502888395188-799b90b43871?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') ?>" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title"><?php echo get_theme_mod('card-title-3', 'Card Title 3') ?></h5>
+                            <p class="card-text"><?php echo get_theme_mod('card-text-3', 'Card Text 3') ?></p>
+                            <a href="<?php echo get_theme_mod('card-link-3', 'https://www.google.com/') ?>" class="btn btn-primary"><?php echo get_theme_mod('card-button-3', 'Card Button 3') ?></a>
                         </div>
                     </div>
                 </div>
@@ -55,11 +56,10 @@ get_header(); ?>
             </div>
         </div>
     </section>
-    -->
 
     <section class="bg-light">
         <div class="container">
-            <h1 class="mt-4"><?php the_title(); ?></h1>
+            <h1 class="mb-4"><?php the_title(); ?></h1>
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <?php the_content(); ?>
                 <? endwhile; endif; ?>
