@@ -48,10 +48,10 @@ function customizer($wp_customize) {
         'priority' => 131,
     ));
 
-    // Cards Overall
-    $wp_customize->add_section('Overall', array(
-        'title' => __('Overall', 'pt1602'),
-        'description' => sprintf(__('Overall', 'pt1602')),
+    // Cards-Overall
+    $wp_customize->add_section('CardsOverall', array(
+        'title' => __('CardsOverall', 'pt1602'),
+        'description' => sprintf(__('CardsOverall', 'pt1602')),
         'priority' => 1,
         'panel' => 'Cards',
     ));
@@ -63,7 +63,7 @@ function customizer($wp_customize) {
     ));
     $wp_customize->add_control('Cards-title', array(
         'label' => __('Cards Title', 'pt1602'),
-        'section' => 'Overall',
+        'section' => 'CardsOverall',
         'priority' => 1,
     ));
 
@@ -257,6 +257,207 @@ function customizer($wp_customize) {
         'label' => __('Card link 3', 'pt1602'),
         'section' => 'CardThree',
         'priority' => 5,
+    ));
+
+    // Collapsible * * * //
+    $wp_customize->add_panel( 'Collapsible', array(
+        'title' => __( 'Collapsible' ),
+        'description' => '<p>Edit the Collapsible</p>',
+        'priority' => 132,
+    ));
+
+    // Collapsible Overall
+    $wp_customize->add_section('CollapsibleOverall', array(
+        'title' => __('CollapsibleOverall', 'pt1602'),
+        'description' => sprintf(__('CollapsibleOverall', 'pt1602')),
+        'priority' => 1,
+        'panel' => 'Collapsible',
+    ));
+
+    // Section Title
+    $wp_customize->add_setting('Collapsible-title', array(
+        'deafult' => _x('Collapsible Title', 'pt1602'),
+        'type' => 'theme_mod'
+    ));
+    $wp_customize->add_control('Collapsible-title', array(
+        'label' => __('Collapsible Title', 'pt1602'),
+        'section' => 'CollapsibleOverall',
+        'priority' => 1,
+    ));
+
+    // Collapsible Section 1
+    $wp_customize->add_section('CollapsibleOne', array(
+        'title' => __('CollapsibleOne', 'pt1602'),
+        'description' => sprintf(__('Options for CollapsibleOne', 'pt1602')),
+        'priority' => 1,
+        'panel' => 'Collapsible',
+    ));
+
+    // CollapsibleOne Title 1
+    $wp_customize->add_setting('CollapsibleOne-title-1', array(
+        'deafult' => _x('CollapsibleOne Title 1', 'pt1602'),
+        'type' => 'theme_mod'
+    ));
+    $wp_customize->add_control('CollapsibleOne-title-1', array(
+        'label' => __('CollapsibleOne Title 1', 'pt1602'),
+        'section' => 'CollapsibleOne',
+        'priority' => 1,
+    ));
+
+    // CollapsibleOne Text 1
+    $wp_customize->add_setting('CollapsibleOne-text-1', array(
+        'deafult' => _x('CollapsibleOne Text 1', 'pt1602'),
+        'type' => 'theme_mod'
+    ));
+    $wp_customize->add_control('CollapsibleOne-text-1', array(
+        'label' => __('CollapsibleOne Text 1', 'pt1602'),
+        'section' => 'CollapsibleOne',
+        'priority' => 2,
+    ));
+
+    // Collapsible Section 2
+    $wp_customize->add_section('CollapsibleTwo', array(
+        'title' => __('CollapsibleTwo', 'pt1602'),
+        'description' => sprintf(__('Options for CollapsibleTwo', 'pt1602')),
+        'priority' => 2,
+        'panel' => 'Collapsible',
+    ));
+
+    // CollapsibleTwo Title 1
+    $wp_customize->add_setting('CollapsibleTwo-title-1', array(
+        'deafult' => _x('CollapsibleTwo Title 1', 'pt1602'),
+        'type' => 'theme_mod'
+    ));
+    $wp_customize->add_control('CollapsibleTwo-title-1', array(
+        'label' => __('CollapsibleTwo Title 1', 'pt1602'),
+        'section' => 'CollapsibleTwo',
+        'priority' => 1,
+    ));
+
+    // CollapsibleTwo Text 1
+    $wp_customize->add_setting('CollapsibleTwo-text-1', array(
+        'deafult' => _x('CollapsibleTwo Text 1', 'pt1602'),
+        'type' => 'theme_mod'
+    ));
+    $wp_customize->add_control('CollapsibleTwo-text-1', array(
+        'label' => __('CollapsibleTwo Text 1', 'pt1602'),
+        'section' => 'CollapsibleTwo',
+        'priority' => 2,
+    ));
+
+    // Collapsible Section 3
+    $wp_customize->add_section('CollapsibleThree', array(
+        'title' => __('CollapsibleThree', 'pt1602'),
+        'description' => sprintf(__('Options for CollapsibleThree', 'pt1602')),
+        'priority' => 3,
+        'panel' => 'Collapsible',
+    ));
+
+    // CollapsibleThree Title 1
+    $wp_customize->add_setting('CollapsibleThree-title-1', array(
+        'deafult' => _x('CollapsibleThree Title 1', 'pt1602'),
+        'type' => 'theme_mod'
+    ));
+    $wp_customize->add_control('CollapsibleThree-title-1', array(
+        'label' => __('CollapsibleThree Title 1', 'pt1602'),
+        'section' => 'CollapsibleThree',
+        'priority' => 1,
+    ));
+
+    // CollapsibleThree Text 1
+    $wp_customize->add_setting('CollapsibleThree-text-1', array(
+        'deafult' => _x('CollapsibleThree Text 1', 'pt1602'),
+        'type' => 'theme_mod'
+    ));
+    $wp_customize->add_control('CollapsibleThree-text-1', array(
+        'label' => __('CollapsibleThree Text 1', 'pt1602'),
+        'section' => 'CollapsibleThree',
+        'priority' => 2,
+    ));
+
+    // Teaser * * * //
+    $wp_customize->add_section('Teaser', array(
+        'title' => __('Teaser', 'pt1602'),
+        'description' => sprintf(__('Teaser', 'pt1602')),
+        'priority' => 129,
+    ));
+
+    // Teaser Display
+    $wp_customize->add_setting('Teaser-display', array(
+        'deafult' => _x('Teaser Display', 'pt1602'),
+        'type' => 'theme_mod'
+    ));
+    $wp_customize->add_control('Teaser-display', array(
+        'label' => __('Teaser Display', 'pt1602'),
+        'section' => 'Teaser',
+        'priority' => 1,
+        'description' => __( 'Use CSS arguments like: none, initial, ...' ),
+    ));
+
+    // Teaser Featured
+    $wp_customize->add_setting('Teaser-featured', array(
+        'deafult' => _x('Teaser Featured', 'pt1602'),
+        'type' => 'theme_mod'
+    ));
+    $wp_customize->add_control('Teaser-featured', array(
+        'label' => __('Teaser Featured', 'pt1602'),
+        'section' => 'Teaser',
+        'priority' => 2,
+    ));
+
+    // Teaser Heading
+    $wp_customize->add_setting('Teaser-heading', array(
+        'deafult' => _x('Teaser Heading', 'pt1602'),
+        'type' => 'theme_mod'
+    ));
+    $wp_customize->add_control('Teaser-heading', array(
+        'label' => __('Teaser Heading', 'pt1602'),
+        'section' => 'Teaser',
+        'priority' => 2,
+    ));
+
+    // Teaser Content
+    $wp_customize->add_setting('Teaser-content', array(
+        'deafult' => _x('Teaser Content', 'pt1602'),
+        'type' => 'theme_mod'
+    ));
+    $wp_customize->add_control('Teaser-content', array(
+        'label' => __('Teaser Content', 'pt1602'),
+        'section' => 'Teaser',
+        'priority' => 2,
+    ));
+
+    // Teaser Button
+    $wp_customize->add_setting('Teaser-button', array(
+        'deafult' => _x('Teaser Button', 'pt1602'),
+        'type' => 'theme_mod'
+    ));
+    $wp_customize->add_control('Teaser-button', array(
+        'label' => __('Teaser Button', 'pt1602'),
+        'section' => 'Teaser',
+        'priority' => 2,
+    ));
+
+    // Teaser Link
+    $wp_customize->add_setting('Teaser-link', array(
+        'deafult' => _x('Teaser Link', 'pt1602'),
+        'type' => 'theme_mod'
+    ));
+    $wp_customize->add_control('Teaser-link', array(
+        'label' => __('Teaser Link', 'pt1602'),
+        'section' => 'Teaser',
+        'priority' => 2,
+    ));
+
+    // Teaser Time
+    $wp_customize->add_setting('Teaser-time', array(
+        'deafult' => _x('Teaser Time', 'pt1602'),
+        'type' => 'theme_mod'
+    ));
+    $wp_customize->add_control('Teaser-time', array(
+        'label' => __('Teaser Time', 'pt1602'),
+        'section' => 'Teaser',
+        'priority' => 2,
     ));
 }
 add_action('customize_register', 'customizer');
